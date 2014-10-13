@@ -18,7 +18,7 @@ RUN chmod +x /run.sh
 
 ONBUILD ADD *.war ${CATALINA_HOME}/webapps/
 
-VOLUME ["${CATALINA_HOME}/logs", "${CATALINA_HOME}/work", {CATALINA_HOME}/temp" ]
+VOLUME ["${CATALINA_HOME}/logs", "${CATALINA_HOME}/work", "{CATALINA_HOME}/temp" ]
 
 EXPOSE 8080
 CMD ["/run.sh"]
