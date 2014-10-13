@@ -2,7 +2,7 @@ FROM dockerfile/java:oracle-java8
 MAINTAINER Urs Breu <ubreu@gleisdrei.ch>
 
 ENV TOMCAT_MAJOR_VERSION 7
-ENV TOMCAT_MINOR_VERSION {TOMCAT_MAJOR_VERSION}.0.56
+ENV TOMCAT_MINOR_VERSION ${TOMCAT_MAJOR_VERSION}.0.56
 ENV CATALINA_HOME /opt/tomcat
 
 RUN wget -q https://archive.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR_VERSION}/v${TOMCAT_MINOR_VERSION}/bin/apache-tomcat-${TOMCAT_MINOR_VERSION}.tar.gz && \
