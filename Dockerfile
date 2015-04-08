@@ -1,4 +1,4 @@
-FROM dockerfile/java:oracle-java8
+FROM java:8-jre
 MAINTAINER Urs Breu <ubreu@gleisdrei.ch>
 
 ENV TOMCAT_MAJOR_VERSION 7
